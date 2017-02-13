@@ -1,0 +1,20 @@
+The HTML DOM stands for the Document Object Model. The Document Object Model allows Javascript to create dynamic HTML by controlling elements of the HTML. The DOM works like a tree. The root of the tree is the "Document", and it's child is the HTML element. From there, we typically see the tree branch into the head element, and the body, and both of those elements have direct children as well. Each element in the DOM is called a "Node". For example, if you have a tag like this:
+<h1>Welcome to My Site!</h1>
+That is a DOM Node! Keep in mind that each element is its own Node.
+
+Another example:
+<div class="header">
+	<div class="logo">
+		<a href="#"><img ...></a>
+	</div>
+</div>
+
+In this example, the "header" div is its own element, and therefore, it is a Node. Then the "logo" is a child Node of the header Node. The "link" element is then a child Node of the logo Node. Each element is a Node.
+This kind of node structure allows Javascript to move fluidly through the HTML, and work dynamically with these nodes in order to change, add, remove, or otherwise work with each of these elements, giving developers the ability to integrate user interaction and dynamically generated pages.
+
+Server-side programming and client-side programming are different types of communication styles that we can take advantage of as programmers.
+Client-side programming primarily uses the three core languages Javascript, HTML, and CSS. This type of programming is used to create interactive webpages, dynamic page responses, and to interact with temporary and local storage, such as cookies and sessions.
+Server-side programming, on the other hand, is used to process user input, respond to a client request to display the page, and to work with permanent storage such as databases, SQL, and, other unchanging files. Example languages may be PHP, Python, Ruby, or ASP.Net.
+
+Events are essentially user inputs that allow us to create dynamic content. This means that content is generated based on things like what the user has clicked on, where their mouse is hovering, how and where they scroll on the page, etc. Dynamic content is created based on the user's actions. Events help us to recognize user input and accomplish a custom result.
+Examples of events can be anything from the user clicking on a link, to hovering over an image, holding down the arrow keys, or even just moving their mouse around the screen. With Javascript, we can add event listeners, which respond dynamically when the user performs a certain event. If the user clicks on the "submit" button at the bottom of a form, that is an event. The program may then tell the server what the user typed into the text field, reset the field to blank, and refresh the page. We can program all sorts of event listeners in order to get the page to respond when the user does a variety of actions.
